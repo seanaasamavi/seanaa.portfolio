@@ -1,0 +1,1151 @@
+<!--BlogixTheme-->
+<!--ThemeName:fly-->
+<!--ThemeVersion:4.0-->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<-HeadMeta->
+<meta name="theme-color" content="((color-3))">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<style>
+/* فونت sina برای حروف فارسی - وزن معمولی */
+@font-face {
+font-family: sina;
+src: url('https://raw.githubusercontent.com/seanaasamavi/font/main/tarik-tarikBlack.woff') format('woff');
+font-weight: normal;
+font-display: swap;
+unicode-range: U+0600-06FF, U+FB50-FDFF, U+FE70-FEFE, U+200C-200E;
+}
+@font-face {
+font-family: sina;
+src: url('https://raw.githubusercontent.com/seanaasamavi/font/main/tarik-tarikBlack.woff') format('woff');
+font-weight: 800;
+font-display: swap;
+unicode-range: U+0000-007F, U+0080-00FF, U+0100-024F, U+1E00-1EFF;
+}
+@font-face {
+font-family: Unigeo64;
+src: url('https://raw.githubusercontent.com/seanaasamavi/font/main/Unigeo64-Extrabold-trial.woff') format('woff');
+font-weight: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'Tarik';
+src: url('https://raw.githubusercontent.com/seanaasamavi/font/main/tarik-tarikBlack.woff') format('woff');
+font-weight: normal;
+font-display: swap;
+}
+html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+body {
+margin: 0;
+padding: 0;
+font-family: sina;
+direction: rtl;
+font-size: 11pt;
+color: #111;
+line-height: 1.8;
+background-color: #f3f4f6;
+position: relative;
+background-image: url('((image-2))'), linear-gradient(to bottom right, ((color-3)), ((color-4)));
+background-size: 100% auto;
+background-attachment: scroll;
+background-position: top center;
+background-repeat: no-repeat;
+}
+details, main { display: block; }
+h1 { font-size: 2em; margin: .67em 0; }
+hr { box-sizing: content-box; height: 0; overflow: visible; }
+code, kbd, pre, samp { font-family: sina; font-size: 1em; }
+a { background-color: transparent; }
+abbr[title] { border-bottom: none; text-decoration: underline dotted; }
+b, strong { font-weight: bolder; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -.25em; }
+sup { top: -.5em; }
+img { border-style: none; }
+button, input, optgroup, select, textarea { font-family: sina; font-size: 100%; line-height: 1.15; margin: 0; }
+button, input { overflow: visible; }
+button, select { text-transform: none; }
+[type=button], [type=reset], [type=submit], button { appearance: button; -webkit-appearance: button; }
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner { border-style: none; padding: 0; }
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring { outline: 1px dotted ButtonText; }
+fieldset { padding: .35em .75em .625em; }
+legend { color: inherit; display: table; max-width: 100%; white-space: normal; }
+progress { vertical-align: baseline; }
+textarea { overflow: auto; }
+[type=checkbox], [type=radio], legend { box-sizing: border-box; padding: 0; }
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button { height: auto; }
+[type=search] { appearance: textfield; -webkit-appearance: textfield; outline-offset: -2px; }
+[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; }
+summary { display: list-item; }
+[hidden], template { display: none; }
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+.post { border-radius: 12px; margin-bottom: 30px; }
+.wrap { width: 100%; max-width: 992px; padding-right: 15px; padding-left: 15px; margin-left: auto; margin-right: auto; }
+a { color: #626b7f; text-decoration: none; }
+a:hover { color: #a3aab8; }
+.brColor { border-color: ((color-5)); }
+.bgColor { color: ((color-2)); background-color: ((color-1)); }
+.postinfo { color: ((color-8)); }
+.postinfo a { color: ((color-8)); }
+.post { background-color: ((color-7)); color: ((color-8)); overflow: hidden; }
+.header-placeholder {
+padding: 997px 15px;
+margin-bottom: 60px;
+background: transparent;
+border-radius: 30px;
+min-height: 270px;
+}
+.part { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; }
+.content { width: 100%; max-width: 100%; }
+.sidebar { width: 0; max-width: 0; }
+.postTitle { background-color: ((color-5)); margin: 0; padding: 15px; border-radius: 12px 12px 0 0; display: -webkit-box; line-clamp: 1; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.postTitle, .postTitle a, .postcontent { font-family: Unigeo64, sina, sans-serif !important; }
+.postTitle a, .postcontent a { font-weight: 800; }
+.postcontent { color: ((color-8)); padding: 20px 15px; padding-bottom: 0; word-wrap: break-word; overflow-wrap: break-word; }
+.continueButton { width: 100px; display: block; margin-right: auto; text-align: center; border-radius: 12px; padding: 5px 0; border-width: 2px; border-style: solid; }
+.postTag { margin-top: 15px; }
+.postTag a { color: ((color-8)); }
+.postTitle a { color: ((color-6)); }
+.postTitle img { position: relative; top: -3px; float:left; height: 45px; width:0px; border-radius:22.5px; }
+footer a { color: ((color-2)); }
+.postBorder { border-color: ((color-5)); border-width: 0px; border-style: solid; border-top: none; border-radius: 0 0 12px 12px; }
+.postComment a { margin-right: 20px; }
+.postInfoFooter { padding: 10px 15px; }
+.nextandprevious { margin-bottom: 30px; }
+.nextandprevious a { padding: 5px 0; border-radius: 12px; width: 100px; text-align: center; display: block; border-color:((color-5)); border-width: 2px; border-style: solid; background-color: ((color-7)); color: ((color-8)); }
+.previouslink { float: right; }
+.nextlink { float: left; }
+.box { background-color: ((color-7)); color: ((color-8)); margin-bottom: 30px; overflow: hidden; border-radius: 12px; }
+.box h6 { background-color: ((color-5)); color: ((color-6)); padding: 15px; margin: 0; font-size: 11pt; font-weight: 400; border-radius: 12px 12px 0 0; }
+.boxPadding { padding: 15px; border-style: solid; border-width: 2px; border-top: none; border-radius: 0 0 12px 12px; margin: 0; }
+.boxPadding li { list-style: none; }
+.boxPadding li a { color: ((color-8)); }
+.clear { clear: both; }
+footer { color: ((color-2)); font-size: 13pt; padding: 50px 0; text-align: center; word-spacing: 3px; }
+@media screen and (max-width: 992px) {
+.content, .sidebar { width: 100%; max-width: 100%; }
+.part { flex-direction: column; }
+}
+@media screen and (max-width: 768px) {
+.header-placeholder { padding: 150px 15px; margin-bottom: 30px; border-radius: 20px; min-height: 150px; }
+.postTitle { padding: 12px 10px; font-size: 13pt; }
+.postcontent { padding: 15px 12px; font-size: 12pt; }
+.continueButton, .nextandprevious a { width: 90px; font-size: 10pt; padding: 4px 0; }
+.box h6 { font-size: 12pt; padding: 12px; }
+footer { font-size: 12pt; padding: 30px 10px; }
+.previouslink, .nextlink { float: none; display: block; margin: 5px auto; }
+}
+@media screen and (max-width: 480px) {
+.wrap { padding-right: 10px; padding-left: 10px; }
+.header-placeholder { padding: 120px 10px; margin: 15px auto; border-radius: 15px; min-height: 120px; }
+.post { border-radius: 12px; margin-bottom: 20px; }
+.postTitle { padding: 10px 8px; font-size: 12pt; border-radius: 12px 12px 0 0; }
+.postBorder { border-radius: 0 0 12px 12px; }
+.postcontent { padding: 12px 10px; font-size: 11pt; line-height: 1.6; }
+.postinfo { font-size: 10pt; }
+.continueButton, .nextandprevious a { width: 100%; max-width: 120px; margin: 5px auto; border-radius: 12px; }
+.box { border-radius: 12px; margin-bottom: 20px; }
+.box h6 { font-size: 11pt; padding: 10px; border-radius: 12px 12px 0 0; }
+.boxPadding { padding: 12px 10px; border-radius: 0 0 12px 12px; }
+footer { font-size: 11pt; padding: 25px 10px; word-spacing: 2px; }
+}
+html, body { max-width: 100%; overflow-x: hidden; }
+.sticker-layer {
+position: absolute !important;
+height: auto;
+z-index: 99999 !important;
+pointer-events: none !important;
+background: transparent !important;
+user-select: none;
+-webkit-user-drag: none;
+object-fit: contain;
+}
+.sticker-layer::-webkit-media-controls { display: none !important; }
+/* ========================================== */
+/* ✅ استایل‌های اسلایدرها و فاصله‌گذاری */
+/* ========================================== */
+.slider-section {
+position: relative;
+overflow: visible !important;
+margin-bottom: 396px;
+}
+.slider-section:last-of-type {
+margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+.slider-section { margin-bottom: 150px; }
+.slider-section:last-of-type { margin-bottom: 10px; }
+}
+/* ========================================== */
+/* ✅ آیکون "click here" - اصلاح شده */
+/* ========================================== */
+.slider-click-hint {
+position: absolute;
+left: 195px;
+top: 54%;
+transform: translateY(-50%);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5px;
+cursor: pointer;
+z-index: 100;
+text-decoration: none !important;
+transition: all 0.3s ease;
+pointer-events: none !important;
+}
+.slider-click-hint:hover {
+transform: translateY(-50%) scale(1.1);
+}
+.slider-click-hint .hint-arrow {
+font-size: 30px;
+color: #cdd4d9;
+animation: bounceRight 1.5s infinite;
+line-height: 1;
+filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.slider-click-hint .hint-text {
+font-family: 'Unigeo64', sina;
+font-size: 20px;
+color: #cdd4d9;
+letter-spacing: 2px;
+white-space: nowrap;
+text-transform: uppercase;
+font-weight: bold;
+filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+@keyframes bounceRight {
+0%, 100% { transform: translateX(0); }
+50% { transform: translateX(8px); }
+}
+@media screen and (max-width: 1100px) {
+.slider-click-hint { left: -95px; }
+.slider-click-hint .hint-text { font-size: 12px; }
+.slider-click-hint .hint-arrow { font-size: 28px; }
+}
+@media screen and (max-width: 900px) {
+.slider-click-hint { display: none; }
+}
+/* ========================================== */
+/* ✅ اطلاعات تماس - اصلاح شده */
+/* ========================================== */
+.contact-footer {
+text-align: center;
+padding: 20px 20px 30px;
+margin-top: -380px;
+margin-bottom: 40px;
+font-family: 'Tarik', sans-serif;
+color: #cdd4d9;
+position: relative;
+z-index: 10;
+}
+.contact-footer .contact-label {
+font-family: 'Unigeo64', sans-serif;
+font-size: 14px;
+letter-spacing: 4px;
+text-transform: uppercase;
+opacity: 0.6;
+margin-bottom: 20px;
+color: #cdd4d9;
+}
+.contact-footer .contact-row {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.contact-footer a {
+color: #cdd4d9;
+text-decoration: none;
+transition: all 0.3s ease;
+padding: 12px 26px;
+border: 1.5px solid rgba(205, 212, 217, 0.35);
+border-radius: 12px;
+font-family: 'Tarik', sans-serif;
+display: inline-flex;
+align-items: center;
+gap: 12px;
+font-size: 16px;
+background: rgba(205, 212, 217, 0.03);
+backdrop-filter: blur(4px);
+}
+.contact-footer a:hover {
+background: rgba(205, 212, 217, 0.12);
+border-color: rgba(205, 212, 217, 0.6);
+transform: translateY(-3px);
+box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.contact-footer a svg {
+width: 20px;
+height: 20px;
+stroke: #cdd4d9;
+fill: none;
+stroke-width: 2;
+stroke-linecap: round;
+stroke-linejoin: round;
+flex-shrink: 0;
+}
+.contact-footer .separator {
+color: rgba(205, 212, 217, 0.3);
+font-size: 20px;
+font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+.contact-footer {
+margin-top: -150px;
+padding: 15px 10px 25px;
+}
+.contact-footer .contact-row {
+flex-direction: column;
+gap: 14px;
+}
+.contact-footer .separator {
+display: none;
+}
+.contact-footer a {
+font-size: 15px;
+padding: 10px 20px;
+width: 100%;
+max-width: 300px;
+justify-content: center;
+}
+.contact-footer a svg {
+width: 18px;
+height: 18px;
+}
+}
+/* ========================================== */
+/* ✅ استایل‌های اسلایدر و مودال */
+/* ========================================== */
+:root { --slider-height: 540px; }
+.swiper-frame {
+position: relative;
+width: 100%;
+max-width: 960px;
+height: var(--slider-height);
+aspect-ratio: 16 / 9;
+margin: 0 auto;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+background: #000;
+--swiper-navigation-size: 50px;
+--swiper-navigation-color: #fff;
+}
+.blogix-swiper { width: 100%; height: 100%; direction: ltr !important; border-radius: 20px; overflow: hidden; }
+.swiper-wrapper { direction: ltr !important; }
+.swiper-slide { width: 100% !important; height: 100% !important; position: relative; overflow: hidden; cursor: pointer; background-color: #111; }
+.slide-media { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; transition: transform 0.4s ease; transform: scale(1); }
+.slide-text { position: absolute; bottom: 37px; left: 20px; right: 20px; padding: 16px 20px; background: rgba(0,0,0,0.30); backdrop-filter: blur(3px); border-radius: 20px; color: #fff; z-index: 2; transform: translateY(0); opacity: 1; transition: all 0.4s ease; text-align: right; direction: rtl !important; font-family: 'Tarik', sans-serif; pointer-events: none; }
+.slide-text h3 { margin: 0; font-size: 20px; line-height: 1.6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (hover: hover) {
+.swiper-slide:hover .slide-media { transform: scale(1.05); }
+.swiper-slide:hover .slide-text { transform: translateY(-5px); background: rgba(0,0,0,0.85); }
+}
+.swiper-button-prev, .swiper-button-next { background: rgba(0, 0, 0, 0.30); border-radius: 25%; backdrop-filter: blur(3px); z-index: 50; transition: all 0.3s ease; top: 50%; width: calc(var(--swiper-navigation-size) / 40 * 40) !important; height: calc(var(--swiper-navigation-size) / 40 * 40) !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.swiper-button-prev { left: 15px !important; right: auto !important; }
+.swiper-button-next { right: 15px !important; left: auto !important; }
+.swiper-button-prev:hover, .swiper-button-next:hover { background: rgba(0,0,0,0.85); transform: scale(1.1); }
+.swiper-button-prev::after, .swiper-button-next::after { font-size: 24px !important; font-weight: 900 !important; }
+.swiper-button-prev svg, .swiper-button-next svg { width: 24px !important; height: 24px !important; stroke-width: 4px !important; }
+.swiper-pagination { bottom: 15px !important; z-index: 50 !important; display: flex; flex-direction: row; justify-content: center; }
+.swiper-pagination-bullet { width: 8px !important; height: 8px !important; background: rgba(255,255,255,0.5) !important; opacity: 1 !important; margin: 0 6px !important; transition: all 0.3s ease !important; }
+.swiper-pagination-bullet-active { width: 24px !important; background: #ffffff !important; border-radius: 999px !important; }
+.video-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: 99999; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(8px); }
+.video-modal.active { display: flex; opacity: 1; }
+.modal-video-container { position: relative; width: 90vw; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
+.modal-video-container video { width: 100%; max-height: 80vh; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); outline: none; background: #000; }
+.close-modal { position: absolute; top: -45px; right: 0; color: #fff; font-size: 32px; font-weight: bold; cursor: pointer; background: rgba(255,255,255,0.1); border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.close-modal:hover { background: rgba(255,255,255,0.3); }
+.modal-title { color: #fff; font-family: 'Tarik', sans-serif; margin-top: 15px; font-size: 18px; text-align: center; direction: rtl; }
+.image-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: 99999; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(8px); }
+.image-modal.active { display: flex; opacity: 1; }
+.modal-image-container { position: relative; width: 90vw; max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
+.modal-image-container img { max-width: 100%; max-height: 80vh; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); outline: none; background: #000; transition: transform 0.3s ease; transform-origin: center center; cursor: zoom-in; user-select: none; touch-action: none; -webkit-user-drag: none; }
+.zoom-controls { position: absolute; bottom: -50px; display: flex; gap: 15px; z-index: 10; }
+.zoom-controls button { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+.zoom-controls button:hover { background: rgba(255,255,255,0.3); transform: scale(1.1); }
+@media screen and (max-width: 768px) {
+.swiper-frame { --swiper-navigation-size: 42px; }
+.slide-text { bottom: 50px; left: 15px; right: 15px; padding: 12px 16px; }
+.slide-text h3 { font-size: 16px; }
+.swiper-button-prev::after, .swiper-button-next::after { font-size: 18px !important; }
+.swiper-button-prev svg, .swiper-button-next svg { width: 18px !important; height: 18px !important; stroke-width: 3px !important; }
+.swiper-pagination { bottom: 12px !important; }
+.swiper-pagination-bullet { width: 7px !important; height: 7px !important; margin: 0 5px !important; }
+.swiper-pagination-bullet-active { width: 20px !important; }
+}
+
+/* ========================================== */
+/* ✅ تغییرات اختصاصی موبایل (اندروید و iOS) */
+/* ========================================== */
+
+/* 4️⃣ عنوان‌های بالای اسلایدر - فقط موبایل */
+.slider-mobile-title {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* 1️⃣ بکگراند جدا برای موبایل */
+    body {
+        background-image: url('https://uploadkon.ir/uploads/7f2d10_26site-akharin.png'), linear-gradient(to bottom right, ((color-3)), ((color-4))) !important;
+        background-size: 100% auto !important;
+        background-attachment: scroll !important;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    /* 🐛 باگ اول: اصلاح نسبت 16:9 - حذف height ثابت و استفاده از aspect-ratio */
+    .swiper-frame {
+        width: calc(100% - 40px) !important;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        margin: 0 auto !important;
+        border-radius: 16px !important;
+    }
+
+    /* 3️⃣ مخفی کردن استیکرها در موبایل */
+    .sticker-layer {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    /* 5️⃣ مخفی کردن سایدبار/منو در موبایل */
+    .sidebar {
+        display: none !important;
+    }
+    .content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 7️⃣ فاصله بیشتر هدر برای نمایش متن تصویر */
+    .header-placeholder {
+        padding: 320px 15px !important;
+        margin-bottom: 40px !important;
+        min-height: 280px !important;
+    }
+
+    /* 4️⃣ نمایش عنوان‌های اسلایدر در موبایل */
+    .slider-mobile-title {
+        display: block !important;
+        font-family: 'Unigeo64', sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        margin: 0 auto 18px !important;
+        padding: 0 20px !important;
+        letter-spacing: 2px !important;
+        /* 🐛 باگ دوم: کاهش 70 درصدی شدت سایه */
+        text-shadow: 0 1px 4px rgba(0,0,0,0.21), 0 1px 2px rgba(0,0,0,0.27) !important;
+        max-width: 600px !important;
+        line-height: 1.4 !important;
+    }
+
+    .slider-section {
+        margin-bottom: 180px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-placeholder {
+        padding: 260px 10px !important;
+        min-height: 220px !important;
+    }
+    .slider-mobile-title {
+        font-size: 17px !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 14px !important;
+    }
+    .swiper-frame {
+        width: calc(100% - 24px) !important;
+    }
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+<video class="sticker-layer" src="https://raw.githubusercontent.com/seanaasamavi/sticker/main/Pre-comp%201-1.webm" autoplay loop muted playsinline style="top: 5200px; left: 1030px; width: 500px;"></video>
+<video class="sticker-layer" src="https://raw.githubusercontent.com/seanaasamavi/sticker/main/Pre-comp%202-1.webm" autoplay loop muted playsinline style="top: 2600px; left: 1200px; width: 350px;"></video>
+<video class="sticker-layer" src="https://raw.githubusercontent.com/seanaasamavi/sticker/main/Pre-comp%203-1.webm" autoplay loop muted playsinline style="top: 3600px; left: 20px; width: 350px;"></video>
+<video class="sticker-layer" src="https://raw.githubusercontent.com/seanaasamavi/man/06f9c7c1911ee94d8d113393199ec23c0cf68684/000%20test%202-alpha.webm" autoplay loop muted playsinline style="top: 772px; left: 138px; width: 400px;"></video>
+<BlogixTheme>
+<var type="image" name="image-1" value="https://uploadkon.ir/uploads/0d8624_263.svg" info="آدرس تصویر پس‌زمینه هدر">
+<var type="image" name="image-2" value="https://uploadkon.ir/uploads/d81010_26site-nahai-6.png" info="آدرس تصویر پس‌زمینه بدنه">
+<var type="color" name="color-1" value="#000000" info="رنگ پس‌زمینه عنوان">
+<var type="color" name="color-2" value="#ffffff" info="رنگ متن عنوان">
+<var type="color" name="color-3" value="#caf4ff" info="رنگ اول پس‌زمینه بدنه">
+<var type="color" name="color-4" value="#73e1fd" info="رنگ دوم پس‌زمینه بدنه">
+<var type="color" name="color-5" value="#37d7ff" info="رنگ پس‌زمینه عنوان پست‌ها">
+<var type="color" name="color-6" value="#ffffff" info="رنگ متن عنوان پست‌ها">
+<var type="color" name="color-7" value="#ffffff" info="رنگ پس‌زمینه بدنه پست‌ها">
+<var type="color" name="color-8" value="#0098be" info="رنگ متن بدنه پست‌ها">
+</BlogixTheme>
+<div class="wrap">
+<div class="header-placeholder"></div>
+</div>
+
+<!-- ✅ عنوان موبایل اسلایدر اول -->
+<div class="slider-mobile-title">MOTION GRAPHICS SAMPLE</div>
+
+<!-- ✅ اسلایدر اول با آیکون click here -->
+<div class="slider-section" id="first-slider">
+<a href="#first-slider" class="slider-click-hint">
+<span class="hint-arrow">→</span>
+<span class="hint-text">click here</span>
+</a>
+<div class="swiper-frame">
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper blogix-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/01-1.mp4" data-title="پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/01-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/02-1.mp4" data-title="پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/02-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/03-1.mp4" data-title="پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/03-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان هایی از پروژه موشن گرافیک شرکت هوشمند سپهر</h3></div>
+</div>
+<!-- ✅ تغییر اول: تایتل اسلاید 4 اصلاح شد -->
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/12-1.mp4" data-title="پلان هایی از پروژه موشن‌گرافیک شرکت هوشمند سپهر">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/12-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان هایی از پروژه موشن‌گرافیک شرکت هوشمند سپهر</h3></div>
+</div>
+<!-- ✅ تغییر اول: تایتل اسلاید 5 اصلاح شد -->
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/11-1.mp4" data-title="پلان هایی از پروژه موشن‌گرافیک شرکت هوشمند سپهر">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/11-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان هایی از پروژه موشن‌گرافیک شرکت هوشمند سپهر</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/04-1.mp4" data-title="پلان تستی انیمت کارکتر 2D">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/04-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پلان تستی انیمت کارکتر 2D</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/06-1.mp4" data-title="پروژه تست تکسچر سازی شیشه cinema 4D">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/06-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پروژه تست تکسچر سازی شیشه cinema 4D</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/05-1.mp4" data-title="سفارش پروژه دانشجو">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/05-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>سفارش پروژه دانشجو</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/07-1.mp4" data-title="پروژه تست افکت اسلایدر کنترل">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/07-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پروژه تست افکت اسلایدر کنترل</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/08-1.mp4" data-title="پروژه تست افکت redgiant trapcode particul">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/08-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>پروژه تست افکت redgiant trapcode particul</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/09-1.mp4" data-title="یکی از چند موشن تبلیغاتی منچیکو">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/after-effect/main/09-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>یکی از چند موشن تبلیغاتی منچیکو</h3></div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+
+<!-- ✅ عنوان موبایل اسلایدر دوم -->
+<div class="slider-mobile-title">ANIMATION SAMPLE</div>
+
+<!-- ✅ اسلایدر دوم -->
+<div class="slider-section">
+<div class="swiper-frame">
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper blogix-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/01-1.mp4" data-title="جان‌بخشی و انیمیت راه رفتن">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/01-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت راه رفتن</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/02-1.mp4" data-title="جان‌بخشی و انیمیت دویدن">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/02-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت دویدن</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/03-1.mp4" data-title="جان‌بخشی و انیمیت دنبال کردن">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/03-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت دنبال کردن</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/04-1.mp4" data-title="جان‌بخشی و انیمیت پرش">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/04-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت پرش</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/05-1.mp4" data-title="جان‌بخشی و انیمیت پرش و نشست">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/05-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت پرش و نشست</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://raw.githubusercontent.com/seanaasamavi/moho/main/06-1.mp4" data-title="جان‌بخشی و انیمیت لیپ سینک">
+<video class="slide-media" muted playsinline autoplay preload="metadata" loop><source src="https://raw.githubusercontent.com/seanaasamavi/moho/main/06-1.mp4" type="video/mp4"></video>
+<div class="slide-text"><h3>جان‌بخشی و انیمیت لیپ سینک</h3></div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+
+<!-- ✅ عنوان موبایل اسلایدر سوم -->
+<div class="slider-mobile-title">SELF & UNIVERSITY PROJECT</div>
+
+<!-- ✅ اسلایدر سوم -->
+<div class="slider-section">
+<div class="swiper-frame image-slider">
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper blogix-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/ed7107_2600.jpg" data-title="پروژه دانشگاهی تصویر سازی از شخص من">
+<img class="slide-media" src="https://uploadkon.ir/uploads/ed7107_2600.jpg" alt="پروژه دانشگاهی تصویر سازی از شخص من">
+<div class="slide-text"><h3>پروژه دانشگاهی تصویر سازی از شخص من</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/630907_2602.jpg" data-title="پروژه دانشگاهی خلاصه سازی">
+<img class="slide-media" src="https://uploadkon.ir/uploads/630907_2602.jpg" alt="پروژه دانشگاهی خلاصه سازی">
+<div class="slide-text"><h3>پروژه دانشگاهی خلاصه سازی</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/73f607_2606.jpg" data-title="پروژه دانشگاهی فتو مونتاژ">
+<img class="slide-media" src="https://uploadkon.ir/uploads/73f607_2606.jpg" alt="پروژه دانشگاهی فتو مونتاژ">
+<div class="slide-text"><h3>پروژه دانشگاهی فتو مونتاژ</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/707307_2601.jpg" data-title="پروژه دانشگاهی طراحی پوستر">
+<img class="slide-media" src="https://uploadkon.ir/uploads/707307_2601.jpg" alt="پروژه دانشگاهی طراحی پوستر">
+<div class="slide-text"><h3>پروژه دانشگاهی طراحی پوستر</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/136607_2605.jpg" data-title="پروژه شخصی طراحی دعوت‌نامه">
+<img class="slide-media" src="https://uploadkon.ir/uploads/136607_2605.jpg" alt="پروژه شخصی طراحی دعوت‌نامه">
+<div class="slide-text"><h3>پروژه شخصی طراحی دعوت‌نامه</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/479707_2607.jpg" data-title="پروژه شخصی طراحی لوگو و تایپوگرافی بیکری یگانه">
+<img class="slide-media" src="https://uploadkon.ir/uploads/479707_2607.jpg" alt="پروژه شخصی طراحی لوگو و تایپوگرافی بیکری یگانه">
+<div class="slide-text"><h3>پروژه شخصی طراحی لوگو و تایپوگرافی بیکری یگانه</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/e55607_2603.jpg" data-title="پروژه دانشگاهی تایپوگرافی طهران">
+<img class="slide-media" src="https://uploadkon.ir/uploads/e55607_2603.jpg" alt="پروژه دانشگاهی تایپوگرافی طهران">
+<div class="slide-text"><h3>پروژه دانشگاهی تایپوگرافی طهران</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/bbab07_2604.jpg" data-title="پروژه دانشگاهی تایپوگرافی توربو">
+<img class="slide-media" src="https://uploadkon.ir/uploads/bbab07_2604.jpg" alt="پروژه دانشگاهی تایپوگرافی توربو">
+<div class="slide-text"><h3>پروژه دانشگاهی تایپوگرافی توربو</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/6b8607_2609.jpg" data-title="پروژه شخصی طراحی تابلو دکوراتیو">
+<img class="slide-media" src="https://uploadkon.ir/uploads/6b8607_2609.jpg" alt="پروژه شخصی طراحی تابلو دکوراتیو">
+<div class="slide-text"><h3>پروژه شخصی طراحی تابلو دکوراتیو</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/931407_2610.jpg" data-title="پروژه شخصی طراحی تابلو دکوراتیو">
+<img class="slide-media" src="https://uploadkon.ir/uploads/931407_2610.jpg" alt="پروژه شخصی طراحی تابلو دکوراتیو">
+<div class="slide-text"><h3>پروژه شخصی طراحی تابلو دکوراتیو</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/614907_2611.jpg" data-title="پروژه شخصی طراحی تابلو دکوراتیو">
+<img class="slide-media" src="https://uploadkon.ir/uploads/614907_2611.jpg" alt="پروژه شخصی طراحی تابلو دکوراتیو">
+<div class="slide-text"><h3>پروژه شخصی طراحی تابلو دکوراتیو</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/137e07_2612.jpg" data-title="پروژه شخصی طراحی تابلو دکوراتیو">
+<img class="slide-media" src="https://uploadkon.ir/uploads/137e07_2612.jpg" alt="پروژه شخصی طراحی تابلو دکوراتیو">
+<div class="slide-text"><h3>پروژه شخصی طراحی تابلو دکوراتیو</h3></div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+
+<!-- ✅ عنوان موبایل اسلایدر چهارم -->
+<div class="slider-mobile-title">LICENSE & CERTIFICATES</div>
+
+<!-- ✅ اسلایدر چهارم -->
+<div class="slider-section">
+<div class="swiper-frame image-slider">
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper blogix-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/ca7707_2601.jpg" data-title="گواهی نرم‌افزار ایلوستریتور و فتوشاپ">
+<img class="slide-media" src="https://uploadkon.ir/uploads/ca7707_2601.jpg" alt="گواهی نرم‌افزار ایلوستریتور و فتوشاپ">
+<div class="slide-text"><h3>گواهی نرم‌افزار ایلوستریتور و فتوشاپ</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/fc6307_2602.jpg" data-title="گواهی نمایشگاه نقاشی کوشک باغ هنر">
+<img class="slide-media" src="https://uploadkon.ir/uploads/fc6307_2602.jpg" alt="گواهی نمایشگاه نقاشی کوشک باغ هنر">
+<div class="slide-text"><h3>گواهی نمایشگاه نقاشی کوشک باغ هنر</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/2f9307_2603.jpg" data-title="گواهی نمایشگاه نقاشی برج میلاد هفتا">
+<img class="slide-media" src="https://uploadkon.ir/uploads/2f9307_2603.jpg" alt="گواهی نمایشگاه نقاشی برج میلاد هفتا">
+<div class="slide-text"><h3>گواهی نمایشگاه نقاشی برج میلاد هفتا</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/ba2107_2604.jpg" data-title="گواهی نمایشگاه نقاشی budding art academy لندن">
+<img class="slide-media" src="https://uploadkon.ir/uploads/ba2107_2604.jpg" alt="گواهی نمایشگاه نقاشی budding art academy لندن">
+<div class="slide-text"><h3>گواهی نمایشگاه نقاشی budding art academy لندن</h3></div>
+</div>
+<div class="swiper-slide" data-src="https://uploadkon.ir/uploads/d35807_2605.jpg" data-title="گواهی نمایشگاه نقاشی برج آزادی">
+<img class="slide-media" src="https://uploadkon.ir/uploads/d35807_2605.jpg" alt="گواهی نمایشگاه نقاشی برج آزادی">
+<div class="slide-text"><h3>گواهی نمایشگاه نقاشی برج آزادی</h3></div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+
+<!-- ✅ اطلاعات تماس -->
+<div class="contact-footer">
+<div class="contact-label">Get in Touch</div>
+<div class="contact-row">
+<a href="tel:+989022293471">
+<svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<span>09022293471</span>
+</a>
+<span class="separator">|</span>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=seanaa.samavi@gmail.com" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<span>seanaa.samavi@gmail.com</span>
+</a>
+</div>
+</div>
+
+<div class="wrap part">
+<div class="content">
+<BLOGIX>
+<div id="post<-PostId->" class="post">
+<h2 class="postTitle oneline">
+<a href="<-PostLink->"><-PostTitle-></a>
+<img src="<-BlogPostPhoto->" onerror="this.onerror = null; this.src = '<-DefaultProfilePhoto->';" alt="<-PostAuthor->">
+</h2>
+<div class="postBorder brColor">
+<div class="postcontent">
+<-PostContent->
+<BlogPostTagsBlock>
+<div class="postTag">
+<span>برچسب‌ها: </span>
+<BlogPostTags><a href="<-TagLink->"><-TagName-></a></BlogPostTags>
+</div>
+</BlogPostTagsBlock>
+</div>
+<div class="postinfo">
+<div class="postInfoFooter">
+<-PostAuthor-> | <-PostDate-> <-PostTime->
+<BlogComment>| <a dir="rtl" href="<-PostLink->" target="_blank" class="postComment"><-commentCount-> نظر</a></BlogComment>
+<BlogPostLike>| <a dir="rtl" href="<-PostLikeLink->" target="_blank" class="postComment"><-likeCount-> پسند</a></BlogPostLike>
+<BlogExtendedPost>| <a dir="rtl" href="<-PostLink->" target="_blank" class="postComment">ادامه مطلب</a></BlogExtendedPost>
+</div>
+</div>
+</div>
+</div>
+</BLOGIX>
+<BlogNextAndPreviousBlock>
+<div class="nextandprevious">
+<BlogPreviousPageBlock><a href="<-BlogPreviousPageLink->" class="previouslink brColor">صفحه قبل</a></BlogPreviousPageBlock>
+<BlogNextPageBlock><a href="<-BlogNextPageLink->" class="nextlink brColor">صفحه بعد</a></BlogNextPageBlock>
+<div class="clear"></div>
+</div>
+</BlogNextAndPreviousBlock>
+</div>
+<div class="sidebar">
+<div class="box">
+<h6 class="bgColor">منو</h6>
+<ul class="boxPadding brColor">
+<li><a href="/">خانه</a></li>
+<li><a href="/posts">عناوین</a></li>
+<li><a href="/archive">آرشیو</a></li>
+</ul>
+</div>
+<BlogPreviousItemsBlock>
+<div class="box">
+<h6 class="bgColor">آخرین مطالب</h6>
+<ul class="boxPadding brColor">
+<BlogPreviousItems><li><a href="<-PostLink->" title="<-PostDate->"><-PostTitle-></a></li></BlogPreviousItems>
+</ul>
+</div>
+</BlogPreviousItemsBlock>
+<BlogMostVisitedBlock>
+<div class="box">
+<h6 class="bgColor">پربازدیدترین مطالب <-BlogMostVisitedBlockDateRange-></h6>
+<ul class="boxPadding brColor">
+<BlogMostVisited><li><a href="<-PostLink->" title="<-PostDate->"><-PostTitle-> (<-PostVisitCount-> بازدید)</a></li></BlogMostVisited>
+</ul>
+</div>
+</BlogMostVisitedBlock>
+<BlogTagsBlock>
+<div class="box">
+<h6 class="bgColor">برچسب‌ها</h6>
+<ul class="boxPadding brColor">
+<BlogTags><li><a href="<-TagLink->"><-TagName-></a> <span>(<-TagCount->)</span></li></BlogTags>
+</ul>
+</div>
+</BlogTagsBlock>
+<BlogAuthorsBlock>
+<div class="box">
+<h6 class="bgColor">نویسندگان</h6>
+<ul class="boxPadding brColor">
+<BlogAuthors><li><a href="<-AuthorLink->"><-AuthorName-></a></li></BlogAuthors>
+</ul>
+</div>
+</BlogAuthorsBlock>
+<BlogLinkDumpBlock>
+<div class="box">
+<h6 class="bgColor">پیوندها</h6>
+<ul class="boxPadding brColor">
+<BlogLinkDump><li><a href="<-LinkUrl->" target="_blank"><-LinkTitle-></a></li></BlogLinkDump>
+</ul>
+</div>
+</BlogLinkDumpBlock>
+<BlogCustomHtmlBlock>
+<div class="box">
+<h6 class="bgColor">امکانات</h6>
+<div class="boxPadding brColor"><-BlogCustomHtml-></div>
+<div class="clear"></div>
+</div>
+</BlogCustomHtmlBlock>
+</div>
+</div>
+<footer class="bgColor" dir="rtl">
+<-CopyrightNotice-> | <span>طراحی شده توسط <-BlogTitle-></span>
+</footer>
+<div class="video-modal" id="videoModal">
+<div class="modal-video-container">
+<button class="close-modal" id="closeModal">×</button>
+<video id="modalVideo" controls playsinline muted></video>
+<div class="modal-title" id="modalTitle"></div>
+</div>
+</div>
+<div class="image-modal" id="imageModal">
+<div class="modal-image-container">
+<button class="close-modal" id="closeImageModal">×</button>
+<img id="modalImage" src="" alt="">
+<div class="modal-title" id="modalImageTitle"></div>
+<div class="zoom-controls">
+<button id="zoomIn" title="بزرگنمایی">+</button>
+<button id="zoomOut" title="کوچکنمایی">-</button>
+<button id="resetZoom" title="بازنشانی">⟲</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+// ✅ در دسکتاپ: ویدیوها را pause کن تا autoplay مزاحم نشه
+if (!isTouchDevice) {
+    document.querySelectorAll('.slide-media').forEach(media => {
+        if (media.tagName === 'VIDEO') {
+            media.pause();
+        }
+    });
+}
+
+document.querySelectorAll('.swiper-frame').forEach((frame) => {
+const swiperContainer = frame.querySelector('.blogix-swiper');
+const nextEl = frame.querySelector('.swiper-button-next');
+const prevEl = frame.querySelector('.swiper-button-prev');
+const paginationEl = frame.querySelector('.swiper-pagination');
+const swiper = new Swiper(swiperContainer, {
+rtl: false,
+loop: true,
+grabCursor: true,
+direction: 'horizontal',
+slidesPerView: 1,
+spaceBetween: 0,
+speed: 600,
+navigation: { nextEl: nextEl, prevEl: prevEl },
+pagination: {
+el: paginationEl,
+clickable: true,
+type: 'bullets',
+bulletClass: 'swiper-pagination-bullet',
+bulletActiveClass: 'swiper-pagination-bullet-active'
+},
+observer: true,
+observeParents: true,
+on: {
+init: function() { playActiveMedia(this, frame); },
+slideChangeTransitionStart: function() { pauseAllMedia(frame); },
+slideChangeTransitionEnd: function() { playActiveMedia(this, frame); }
+}
+});
+
+// 🐛 باگ سوم + تغییر دوم: سیستم Lazy Loading هوشمند + autoplay موبایل
+function playActiveMedia(swiperInstance, currentFrame) {
+    // همه ویدیوهای این frame را pause کن و preload را کم کن
+    currentFrame.querySelectorAll('.slide-media').forEach(media => {
+        if (media.tagName === 'VIDEO') {
+            media.pause();
+            media.preload = 'metadata';
+        }
+    });
+    const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+    if (activeSlide) {
+        const media = activeSlide.querySelector('.slide-media');
+        if (media && media.tagName === 'VIDEO') {
+            media.muted = true;
+            // فقط ویدیوی فعال preload=auto میشه (صرفه‌جویی در اینترنت)
+            media.preload = 'auto';
+            try { media.load(); } catch(e) {}
+            const playPromise = media.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // در موبایل گاهی نیاز به تاخیر کوتاه است
+                    setTimeout(() => {
+                        media.play().catch(() => {});
+                    }, 100);
+                });
+            }
+        }
+    }
+}
+
+function pauseAllMedia(currentFrame) {
+currentFrame.querySelectorAll('.slide-media').forEach(media => {
+if (media.tagName === 'VIDEO') media.pause();
+});
+}
+
+// ✅ در دسکتاپ: پخش با hover
+if (!isTouchDevice) {
+const slides = frame.querySelectorAll('.swiper-slide');
+slides.forEach(slide => {
+slide.addEventListener('mouseenter', () => {
+const media = slide.querySelector('.slide-media');
+if (media && media.tagName === 'VIDEO' && media.paused) {
+media.muted = true;
+media.preload = 'auto';
+try { media.load(); } catch(e) {}
+media.play().catch(() => {});
+}
+});
+slide.addEventListener('mouseleave', () => {
+const media = slide.querySelector('.slide-media');
+if (media && media.tagName === 'VIDEO' && !slide.classList.contains('swiper-slide-active')) {
+media.pause();
+}
+});
+});
+}
+});
+
+const videoModal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const modalTitle = document.getElementById('modalTitle');
+const closeModalBtn = document.getElementById('closeModal');
+const imageModal = document.getElementById('imageModal');
+const modalImage = document.getElementById('modalImage');
+const modalImageTitle = document.getElementById('modalImageTitle');
+const closeImageModalBtn = document.getElementById('closeImageModal');
+const zoomInBtn = document.getElementById('zoomIn');
+const zoomOutBtn = document.getElementById('zoomOut');
+const resetZoomBtn = document.getElementById('resetZoom');
+
+let currentZoom = 1;
+let isPanning = false;
+let startX = 0, startY = 0;
+let translateX = 0, translateY = 0;
+
+function updateTransform() {
+modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentZoom})`;
+}
+
+document.querySelectorAll('.swiper-frame').forEach(frame => {
+frame.addEventListener('click', (e) => {
+if (e.target.closest('.swiper-button-prev') || e.target.closest('.swiper-button-next') || e.target.closest('.swiper-pagination')) {
+return;
+}
+const slide = e.target.closest('.swiper-slide');
+if (!slide) return;
+const src = slide.getAttribute('data-src');
+const titleText = slide.getAttribute('data-title');
+
+if (frame.classList.contains('image-slider')) {
+if (src) {
+modalImage.src = src;
+modalImageTitle.innerText = titleText || '';
+currentZoom = 1;
+translateX = 0;
+translateY = 0;
+updateTransform();
+modalImage.style.cursor = 'zoom-in';
+imageModal.style.display = 'flex';
+document.body.style.overflow = 'hidden';
+setTimeout(() => { imageModal.classList.add('active'); }, 10);
+}
+} else {
+if (src) {
+    modalVideo.muted = true;
+    modalVideo.src = src;
+    modalTitle.innerText = titleText || '';
+    videoModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    setTimeout(() => {
+        videoModal.classList.add('active');
+        try { modalVideo.load(); } catch(e) {}
+        const playPromise = modalVideo.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(err => {
+                console.log("پخش خودکار مسدود شد:", err);
+                setTimeout(() => {
+                    modalVideo.play().catch(() => {});
+                }, 150);
+            });
+        }
+    }, 10);
+}
+}
+});
+});
+
+function closeVideoModal() {
+videoModal.classList.remove('active');
+modalVideo.pause();
+document.body.style.overflow = '';
+setTimeout(() => {
+modalVideo.removeAttribute('src');
+modalVideo.load();
+videoModal.style.display = 'none';
+modalTitle.innerText = "";
+}, 300);
+}
+closeModalBtn.addEventListener('click', closeVideoModal);
+videoModal.addEventListener('click', (e) => { if (e.target === videoModal) closeVideoModal(); });
+
+function closeImageModalFunc() {
+imageModal.classList.remove('active');
+document.body.style.overflow = '';
+setTimeout(() => {
+modalImage.removeAttribute('src');
+imageModal.style.display = 'none';
+modalImageTitle.innerText = "";
+currentZoom = 1;
+translateX = 0;
+translateY = 0;
+updateTransform();
+modalImage.style.cursor = 'zoom-in';
+}, 300);
+}
+closeImageModalBtn.addEventListener('click', closeImageModalFunc);
+imageModal.addEventListener('click', (e) => { if (e.target === imageModal) closeImageModalFunc(); });
+
+modalImage.addEventListener('mousedown', (e) => {
+if (currentZoom > 1) {
+isPanning = true;
+startX = e.clientX - translateX;
+startY = e.clientY - translateY;
+modalImage.style.cursor = 'grabbing';
+modalImage.style.transition = 'none';
+e.preventDefault();
+}
+});
+document.addEventListener('mousemove', (e) => {
+if (isPanning) {
+e.preventDefault();
+translateX = e.clientX - startX;
+translateY = e.clientY - startY;
+updateTransform();
+}
+});
+document.addEventListener('mouseup', () => {
+if (isPanning) {
+isPanning = false;
+modalImage.style.transition = 'transform 0.3s ease';
+modalImage.style.cursor = currentZoom > 1 ? 'grab' : 'zoom-in';
+}
+});
+
+modalImage.addEventListener('touchstart', (e) => {
+if (currentZoom > 1 && e.touches.length === 1) {
+isPanning = true;
+startX = e.touches[0].clientX - translateX;
+startY = e.touches[0].clientY - translateY;
+modalImage.style.transition = 'none';
+e.preventDefault();
+}
+}, { passive: false });
+document.addEventListener('touchmove', (e) => {
+if (isPanning && e.touches.length === 1) {
+e.preventDefault();
+translateX = e.touches[0].clientX - startX;
+translateY = e.touches[0].clientY - startY;
+updateTransform();
+}
+}, { passive: false });
+document.addEventListener('touchend', () => {
+if (isPanning) {
+isPanning = false;
+modalImage.style.transition = 'transform 0.3s ease';
+}
+});
+
+if (zoomInBtn) {
+zoomInBtn.addEventListener('click', (e) => {
+e.stopPropagation();
+if (currentZoom < 3) {
+currentZoom += 0.5;
+updateTransform();
+modalImage.style.cursor = 'grab';
+}
+});
+}
+if (zoomOutBtn) {
+zoomOutBtn.addEventListener('click', (e) => {
+e.stopPropagation();
+if (currentZoom > 1) {
+currentZoom -= 0.5;
+updateTransform();
+if (currentZoom === 1) {
+translateX = 0;
+translateY = 0;
+updateTransform();
+modalImage.style.cursor = 'zoom-in';
+} else {
+modalImage.style.cursor = 'grab';
+}
+}
+});
+}
+if (resetZoomBtn) {
+resetZoomBtn.addEventListener('click', (e) => {
+e.stopPropagation();
+currentZoom = 1;
+translateX = 0;
+translateY = 0;
+updateTransform();
+modalImage.style.cursor = 'zoom-in';
+});
+}
+
+modalImage.addEventListener('click', (e) => {
+e.stopPropagation();
+if (currentZoom === 1) {
+currentZoom = 2;
+updateTransform();
+modalImage.style.cursor = 'grab';
+} else {
+currentZoom = 1;
+translateX = 0;
+translateY = 0;
+updateTransform();
+modalImage.style.cursor = 'zoom-in';
+}
+});
+
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape') {
+if (videoModal.classList.contains('active')) closeVideoModal();
+if (imageModal.classList.contains('active')) closeImageModalFunc();
+}
+});
+});
+</script>
+</body>
+</html>
